@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1280px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "aside header" "aside main" "aside footer";
+  grid-template-rows: repeat(minmax(300px 1fr 1fr));
+  grid-template-columns: 1fr 2fr;
+}
+.container > .aside {
+  grid-area: aside;
+  background-color: #323B4C;
+  color: #ffffff;
+}
+.container > .aside .aside-section {
+  padding: 40px 70px;
+}
+.container > .aside .aside-section h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+.container > .aside .my-img {
+  border-radius: 50%;
+  height: 245px;
+  width: 245px;
+}
+.container > .aside .contact {
+  padding-top: 50px;
+}
+.container > .aside .contact h3 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 25px;
+}
+.container > .aside .contact .link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.container > .aside .contact .link i {
+  font-size: 18px;
+  padding-right: 5px;
+}
+.container > .aside .education {
+  padding-top: 50px;
+}
+.container > .aside .education .education-data {
+  padding-top: 25px;
+}
+.container > .aside .education .education-data h4 {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.container > .aside .expertise {
+  padding-top: 50px;
+}
+.container > .aside .expertise .list {
+  padding-left: 15px;
+}
+.container > .aside .expertise .list li {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.container > .aside .language {
+  padding-top: 50px;
+}
+.container > .aside .language h3 {
+  padding-top: 20px;
+}
+.container > .header {
+  grid-area: header;
+  color: #323B4C;
+}
+.container > .header .title {
+  padding-bottom: 10px;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.container > .header .position {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.container > .main {
+  grid-area: main;
+}
+.container > .main .experience {
+  font-family: "Oswald" sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #323B4C;
+}
+.container > .main .main-line {
+  border-bottom: 1px solid #323B4C;
+}
+.container > .main .main-caption {
+  padding: 30px 0 0 25px;
+  color: #737373;
+}
+.container > .main .main-caption .main-data {
+  font-weight: 800;
+  font-size: 16px;
+}
+.container > .main .main-caption .about-company {
+  letter-spacing: 1px;
+  padding: 7px 0;
+}
+.container > .main .main-caption .main-position {
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.container > .footer {
+  grid-area: footer;
+}
+.container > .footer .footer-title {
+  color: #323B4C;
+  font-family: "Oswald" sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+}
+.container > .footer .footer-line {
+  border-bottom: 1px solid #000000;
+}
+.container > .footer .reference {
+  padding-top: 20px;
+  color: #737373;
+}
+.container > .footer .reference .name {
+  font-weight: 800;
+  font-size: 20px;
+  color: #323B4C;
+}
+.container > .footer .reference .job {
+  padding: 5px 0 15px;
+}
+.container > .footer .reference h4 {
+  font-size: 13px;
+}
+.container > .footer .reference h4 span {
+  font-weight: 700;
+  font-size: 12px;
+  padding-right: 10px;
+  color: #323B4C;
+}
+
+.section-center {
+  padding: 40px 30px;
+}
+.section-center .footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas: "header" "aside" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .aside-section {
+    padding: 20px 30px;
+  }
+  .my-img {
+    height: 150px;
+    width: 150px;
+  }
+}/*# sourceMappingURL=style_index.css.map */
